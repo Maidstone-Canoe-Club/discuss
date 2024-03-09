@@ -4,6 +4,9 @@ export default defineNuxtConfig({
 
   appConfig: {
     umami: {
+      host: "https://analytics.maidstonecanoeclub.net",
+      id: "3f6c7199-7571-46e3-a571-d9d0a94d1c33",
+      ignoreLocalhost: true,
       version: 2
     }
   },
