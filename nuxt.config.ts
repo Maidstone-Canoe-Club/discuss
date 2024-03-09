@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  appConfig: {
+    umami: {
+      version: 2
+    }
+  },
+
   srcDir: "src/",
 
   modules: [
