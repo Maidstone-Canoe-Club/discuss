@@ -4,7 +4,10 @@
 
 <template>
   <div>
-    <slot />
+    <PageHeader />
+    <main class="mt-12">
+      <slot />
+    </main>
   </div>
 </template>
 
