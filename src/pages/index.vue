@@ -60,10 +60,11 @@ const data: List[] = [
         postedDate: subDays(new Date(), 3),
         author: authors[1],
         messages: [
-          // {},
-          // {},
-          // {},
-          // {}
+          {
+            content: "A reply to the message",
+            postedDate: subHours(new Date(), 6),
+            author: authors[1]
+          }
         ]
       }
     ]
@@ -76,13 +77,18 @@ const data: List[] = [
         id: "2fb15fe6-bb7a-4217-8f88-bf9af3e843a5",
         title: "Important meeting",
         postedDate: subDays(new Date(), 14),
-        author: {
-          name: "Alice Jones",
-          imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-        },
+        author: authors[2],
         messages: [
-          {},
-          {}
+          {
+            content: "Hello world",
+            postedDate: subHours(new Date(), 7),
+            author: authors[0]
+          },
+          {
+            content: "A reply to the message",
+            postedDate: subHours(new Date(), 6),
+            author: authors[1]
+          }
         ]
       }
     ]

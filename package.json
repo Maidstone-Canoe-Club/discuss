@@ -13,6 +13,7 @@
     "@heroicons/vue": "^2.1.1",
     "date-fns": "^3.3.1",
     "nuxt": "^3.10.3",
+    "nuxt-umami": "^2.6.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

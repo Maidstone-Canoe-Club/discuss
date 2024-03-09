@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     "@nuxt/fonts"
   ],
 
+  extends: [
+    "nuxt-umami"
+  ],
+
   components: [
     {
       path: "~/components",
