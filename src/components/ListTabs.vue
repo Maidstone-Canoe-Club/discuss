@@ -31,9 +31,14 @@ function isTabSelected (tab: Tab) {
       <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
       <select
         id="tabs"
+        v-model="selectedTab"
         name="tabs"
         class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
-        <option v-for="tab in tabs" :key="tab.name" :selected="isTabSelected(tab)">
+        <option
+          v-for="tab in tabs"
+          :key="tab.name"
+          :value="tab"
+          :selected="isTabSelected(tab)">
           {{ tab.name }} ({{ tab.count }})
         </option>
       </select>
