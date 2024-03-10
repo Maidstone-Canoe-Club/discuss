@@ -2,6 +2,11 @@
 useHead({
   title: "MCC - Discuss"
 });
+
+async function onCheck () {
+  await usePushManager();
+}
+
 </script>
 
 <template>
@@ -10,6 +15,9 @@ useHead({
     <NuxtLoadingIndicator />
     <NuxtLayout>
       <NuxtPage />
+      <button @click="onCheck">
+        Check for permission
+      </button>
     </NuxtLayout>
   </div>
 </template>

@@ -20,3 +20,7 @@ registerRoute(new NavigationRoute(
 
 self.skipWaiting();
 clientsClaim();
+
+self.addEventListener("push", (e: PushEvent) => {
+  console.log("we got a push event!", e.data?.json());
+});
