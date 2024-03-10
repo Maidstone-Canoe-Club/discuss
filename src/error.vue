@@ -32,7 +32,7 @@ async function goBack () {
 <template>
   <NuxtLoadingIndicator />
   <NuxtLayout>
-    <MainContent>
+    <PageContent>
       <form
         class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8"
         @submit.prevent>
@@ -47,15 +47,15 @@ async function goBack () {
             {{ message }}
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <AButton
-              :action="goBack"
-              type="submit">
+            <button
+              type="submit"
+              @click="goBack">
               Go back home
-            </AButton>
+            </button>
           </div>
         </div>
       </form>
-    </MainContent>
+    </PageContent>
   </NuxtLayout>
 </template>
 

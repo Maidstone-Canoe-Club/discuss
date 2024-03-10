@@ -108,6 +108,9 @@ const selectedList = computed(() => data.find(d => d.list === selectedTab.value.
 
 <template>
   <PageContent>
+    <ClientOnly>
+      PWA Installed: {{ $pwa?.isPWAInstalled }}
+    </ClientOnly>
     <ListTabs
       v-model="selectedTab"
       :tabs="tabs" />
