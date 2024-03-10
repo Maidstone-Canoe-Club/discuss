@@ -13,7 +13,8 @@ export default defineNuxtConfig({
       id: "3f6c7199-7571-46e3-a571-d9d0a94d1c33",
       ignoreLocalhost: true,
       version: 2
-    }
+    },
+    buildDate: new Date().toISOString()
   },
 
   srcDir: "src/",
@@ -80,7 +81,8 @@ export default defineNuxtConfig({
       globPatterns: ["**/*.{js,css,html,png,svg,ico}"]
     },
     client: {
-      installPrompt: true
+      installPrompt: true,
+      periodicSyncForUpdates: 20
     },
     devOptions: {
       enabled: true,
